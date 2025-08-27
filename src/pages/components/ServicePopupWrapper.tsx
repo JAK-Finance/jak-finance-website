@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ServiceCard from './ServiceCard';
 import RegisterPopup from './RegisterPopup';
-import { Service } from '../data/servicesData';
+import { Service } from '../../data/servicesData';
 
 interface ServicePopupWrapperProps {
   services: Service[];

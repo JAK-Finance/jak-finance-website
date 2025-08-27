@@ -1,22 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
-// import Footer from '../components/Footer';
-import { MenuItem } from '../components/types';
-import Navbar from '../components/Navbar';  // Added import for Navbar
+import Header from './Header';
+// import Footer from './Footer';
+import { MenuItem } from './types';
+import Navbar from './Navbar';  // Added import for Navbar
 
 
 interface ContactProps {
   menuItems: MenuItem[];
 }
-
-const menuItems: MenuItem[] = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Team', path: '/team' },
-  { name: 'Contact', path: '/contact' },
-];
 
 const Contact: React.FC<ContactProps> = ({ menuItems }) => {
   return (

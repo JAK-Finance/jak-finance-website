@@ -1,6 +1,6 @@
 import React from 'react';
-import Service from './pages/Service';
-import { MenuItem } from './components/types';
+import Service from '../components/Service';
+import { MenuItem } from '../components/types'; // Updated import path
 
 const menuItems: MenuItem[] = [
   { name: 'Home', path: '/' },

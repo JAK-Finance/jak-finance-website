@@ -1,5 +1,5 @@
 import React from 'react';
-import { Service } from '../../data/servicesData';
+import { Service } from '../data/servicesData';
 
 interface ServiceCardProps {
   service: Service;

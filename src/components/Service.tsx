@@ -1,23 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
-import ServiceCard from '../components/ServiceCard';
-import { servicesData } from '../../data/servicesData';
-import { MenuItem } from '../components/types';
-import Header from '../components/Header';
+import Navbar from './Navbar';
+import ServiceCard from './ServiceCard';
+import { servicesData } from '../data/servicesData';
+import { MenuItem } from './types';
+import Header from './Header';
 
 interface ServiceProps {
   menuItems: MenuItem[];
 }
-
-const menuItems: MenuItem[] = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Team', path: '/team' },
-  { name: 'Contact', path: '/contact' },
-];
-
 
 const Service: React.FC<ServiceProps> = ({ menuItems }) => {
   return (

@@ -5,11 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // Import your custom components
-import Header from './components/Header';
-import Navbar from './components/Navbar';  // Added import for Navbar
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';  // Added import for Navbar
 
 // Import types (adjust path as needed based on where types/index.d.ts is)
-import { MenuItem } from './components/types';
+import { MenuItem } from '../components/types';
 
 const HomePage: React.FC = () => {
   // Define your menu items

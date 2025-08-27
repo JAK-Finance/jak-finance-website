@@ -1,21 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
-import { MenuItem } from '../components/types';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Header from './Header';
+import { MenuItem } from './types';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 interface AboutProps {
   menuItems: MenuItem[];
 }
-
-const menuItems: MenuItem[] = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Team', path: '/team' },
-  { name: 'Contact', path: '/contact' },
-];
 
 const About: React.FC<AboutProps> = ({ menuItems }) => {
   const teamMembers = [

@@ -1,6 +1,6 @@
 import React from 'react';
-import Team from './pages/Team';
-import { MenuItem } from './components/types';
+import Team from '../components/Team';
+import { MenuItem } from '../components/types'; // Updated import path
 
 const menuItems: MenuItem[] = [
   { name: 'Home', path: '/' },
